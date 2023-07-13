@@ -1,5 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
-require('dotenv').config();
+require("dotenv").config();
 
 const FORK_FUJI = false;
 const FORK_MAINNET = false;
@@ -42,3 +42,6 @@ module.exports = {
     apiKey: process.env.SNOWTRACE_API_KEY, // we use an .env file to hide our Snowtrace API KEY
   },
 };
+
+// CMPUDCF3A2P2MXMYXYGAMJY4XZXJ6WPS1F
+//dbbc20a226fc60e80c203331ef1a960cdb4aad60f6608df10535e79716a75abe
