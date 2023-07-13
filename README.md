@@ -1,41 +1,40 @@
 # Project Title
-
-Simple overview of use/purpose.
+Assessment 4 of ETH-AVAX COURSE
 
 ## Description
-
-An in-depth paragraph about your project and overview of use.
+In this assessment, we have to first create a NFT token and deploy it to fuji test net and interact with that nft. We have created a token DGN.
 
 ## Getting Started
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Executing
+      * First fork this repo.
+      * Then clone the forked repo.
+      * Run npm i
+      * Add fuji testnet to metamask
+      * Get Fuji faucet.
+      * Create .env file
+      * Create your Snow trace api and generate your private key from metamask  and paste them in .env file.
+      * run command ``` npx hardhat run --network fuji .\scripts\deploy.js ```
+      * Now your contract is deployed.
+      * Verify it using command npx hardhat verify tokenAddress --network fuji
+      * View transactions on etherscan.io
 
 ## Help
+#### Adding fuji network
+      * name: fuji
+      * rpc url: https://api.avax-test.network/ext/bc/C/rpc
+      * Chain id: 43113
+      * Currency : AVAX
+      
+##### Faucet Link : https://faucet.avax.network/
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+### Commands
+    * npm i
+    * npx hardhat run --network fuji .\scripts\deploy.js
+    * npx hardhat verify tokenAddress --network fuji
+
 
 ## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
+Alok Raturi
 
 ## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License.
